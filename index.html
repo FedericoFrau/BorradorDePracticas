@@ -31,21 +31,20 @@
     <img
       src="image/Don Ramon Thriller.jpg"
       alt="Don Ramon Thriller"
-      width="400"
-    />
+      width="400" />
     <img
       src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/06/homer.gif"
       alt="homero"
-      width="500"
-    />
+      width="500" />
 
-    <br /><br />
+    <br />
+    <br />
 
     <div>
       <a
-        href="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/06/homer.gif"
-        >un link de gif de Homero</a
-      >
+        href="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/06/homer.gif">
+        un link de gif de Homero
+      </a>
     </div>
 
     <hr />
@@ -60,10 +59,14 @@
     <p>"lorem50"</p>
     <!-- escribe 50 palabras de 'lorem' -->
 
-    <a href="#referencia">Arriba </a><br />
-    <a href="index.html">índice </a><br />
-    <a href="carpeta/Spectrogram.jpg">adelante </a><br />
-    <a href="http://www.google.com.ar">google </a><br />
+    <a href="#referencia">Arriba</a>
+    <br />
+    <a href="index.html">índice</a>
+    <br />
+    <a href="carpeta/Spectrogram.jpg">adelante</a>
+    <br />
+    <a href="http://www.google.com.ar">google</a>
+    <br />
     <!-- <a> etiquetas hipervinculo/hiperenlace -->
 
     <hr />
@@ -73,7 +76,108 @@
       src="image/GreenScreenBG02.jpg"
       alt="imagen de fondo"
       width="900"
-      height="500"
-    />
+      height="500" />
+    <video controls autoplay muted loop width="1200">
+      <source
+        src="video/GIT _ GITHUB ♥ Push, Pull, Fetch y Tags ♥  [ Tutorial en Español - Parte 2].mp4"
+        type="video/mp4" />
+      video no soportado.
+    </video>
+
+    <hr />
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/xo6d3oTkP5M"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <hr />
+
+    <form action="#" method="get">
+      Formulario text|get
+      <input type="text" name="recuadro1" />
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      <input type="text" name="recuadro2" value="escrito con 'value'" />
+      Formulario text|post
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      Formulario submit
+      <input
+        type="text"
+        name="recuadro3"
+        minlength="5"
+        maxlength="10"
+        size="80"
+        placeholder="ingrese aqui sus datos"
+        required />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      Formulario number
+      <input type="number" name="recuadro4" />
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      Formulario checkbox:
+      <input
+        type="checkbox"
+        value="acepta"
+        name="condiciones"
+        checked="checked" />
+      acepto condiciones |
+      <input
+        type="checkbox"
+        value="acepta"
+        name="condiciones2"
+        checked="checked" />
+      acepto otras condiciones
+
+      <p>
+        <input
+          type="checkbox"
+          value="acepta"
+          name="condiciones"
+          checked="checked" />
+        acepto condiciones
+      </p>
+
+      <p>
+        Sexo: Hombre
+        <input type="radio" name="sexo" value="h" />
+        Mujer
+        <input type="radio" name="sexo" value="m" />
+      </p>
+
+      <p>
+        Cantidad con decimal:
+        <input type="number" name="recuadro5" step="0.5" />
+      </p>
+      <p>
+        Contraseña:
+        <input type="password" name="pass" value="escrito con 'value'" />
+      </p>
+      <p>
+        email:
+        <input type="email" name="correo" multiple />
+      </p>
+      <p><input type="hidden" value="No se puede ver" /></p>
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
   </body>
 </html>
