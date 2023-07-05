@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento de prueba y aprendizaje</title>
+
+    <style>
+      h2,
+      h3,
+      h4 {
+        font-family: "Times New Roman";
+        font-size: 32px;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(255, 81, 0);
+      }
+    </style>
+    <!-- se aplica estilo a varias etiquetas -->
+
+    <style>
+      .class_de_pruebas {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 32px;
+        color: rgb(0, 255, 34);
+      }
+    </style>
+    <!-- el punto referencia un class -->
+
+    <style>
+      #otro_id_de_pruebas {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 39px;
+        color: rgb(47, 0, 255);
+      }
+    </style>
+    <!-- el numeral referencia un id -->
+
+    <style>
+      body {
+        background-color: bisque;
+      }
+    </style>
+
+    <style>
+      header {
+        background-color: rgb(177, 226, 43);
+      }
+    </style>
+
+    <style>
+      .resaltado {
+        color: rgb(1, 255, 255);
+        background-color: rgb(255, 255, 0);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p id="referencia">Esto es un parrafo de muestra cualquiera</p>
+      </div>
+      <div>
+        <p>Esto es un texto agregado de pruebas</p>
+      </div>
+    </header>
+    <ul>
+      <li>Elemento1</li>
+      <li>Elemento2</li>
+      <li>Elemento3</li>
+    </ul>
+
+    <ol start="5">
+      <li>1er Elemento</li>
+      <li>2do Elemento</li>
+      <li>3er Elemento</li>
+    </ol>
+
+    <hr />
+    <hr />
+
+    <img
+      src="image/Don Ramon Thriller.jpg"
+      alt="Don Ramon Thriller"
+      width="400" />
+    <img
+      src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/06/homer.gif"
+      alt="homero"
+      width="500" />
+
+    <br />
+    <br />
+
+    <div>
+      <a
+        href="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/06/homer.gif">
+        un link de gif de Homero
+      </a>
+    </div>
+
+    <hr />
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore
+      pariatur facere aperiam aliquam optio sunt. Laudantium aut qui amet ab,
+      doloribus dicta eum nemo distinctio ipsa nulla. Eius, ipsa?
+    </div>
+
+    <p>"lorem*50"</p>
+    <!-- escribe 50 lineas de 'lorem' -->
+    <p>"lorem50"</p>
+    <!-- escribe 50 palabras de 'lorem' -->
+
+    <a href="#referencia">Arriba</a>
+    <br />
+    <a href="index.html">índice</a>
+    <br />
+    <a href="carpeta/Spectrogram.jpg">adelante</a>
+    <br />
+    <a href="http://www.google.com.ar">google</a>
+    <br />
+    <!-- <a> etiquetas hipervinculo/hiperenlace -->
+
+    <hr />
+    <hr />
+
+    <img
+      src="image/GreenScreenBG02.jpg"
+      alt="imagen de fondo"
+      width="900"
+      height="500" />
+    <video controls autoplay muted loop width="1200">
+      <source
+        src="video/GIT _ GITHUB ♥ Push, Pull, Fetch y Tags ♥  [ Tutorial en Español - Parte 2].mp4"
+        type="video/mp4" />
+      video no soportado.
+    </video>
+
+    <hr />
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/xo6d3oTkP5M"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <hr />
+
+    <form action="#" method="get">
+      Formulario text|get
+      <input type="text" name="recuadro1" />
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      <input type="text" name="recuadro2" value="escrito con 'value'" />
+      Formulario text|post
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      Formulario submit
+      <input
+        type="text"
+        name="recuadro3"
+        minlength="5"
+        maxlength="10"
+        size="80"
+        placeholder="ingrese aqui sus datos"
+        required />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      Formulario number
+      <input type="number" name="recuadro4" />
+    </form>
+
+    <br />
+
+    <form action="#" method="post">
+      Formulario checkbox:
+      <input
+        type="checkbox"
+        value="acepta"
+        name="condiciones"
+        checked="checked" />
+      acepto condiciones |
+      <input
+        type="checkbox"
+        value="acepta"
+        name="condiciones2"
+        checked="checked" />
+      acepto otras condiciones
+
+      <p>
+        <input
+          type="checkbox"
+          value="acepta"
+          name="condiciones"
+          checked="checked" />
+        acepto condiciones
+      </p>
+
+      <p>
+        Sexo: Hombre
+        <input type="radio" name="sexo" value="h" />
+        Mujer
+        <input type="radio" name="sexo" value="m" />
+      </p>
+
+      <p>
+        Cantidad con decimal:
+        <input type="number" name="recuadro5" step="0.5" />
+      </p>
+      <p>
+        Contraseña:
+        <input type="password" name="pass" value="escrito con 'value'" />
+      </p>
+      <p>
+        email:
+        <input type="email" name="correo" multiple />
+      </p>
+      <p><input type="hidden" value="No se puede ver" /></p>
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
+    <hr />
+    <p
+      style="
+        color: blue;
+        background-color: aquamarine;
+        font-family: Verdana;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+      ">
+      Aqui comienza la adición de CSS
+    </p>
+
+    <h2>Esto es un titulo en H2 con 'style' aplicado desde 'head'</h2>
+    <h3>Esto es un titulo en H3 con 'style' compartido con H2 desde 'head'</h3>
+
+    <style>
+      #id_de_pruebas {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 32px;
+        color: aqua;
+      }
+    </style>
+    <!-- el numeral referencia un id -->
+
+    <p id="id_de_pruebas">
+      Esto es un párrafo con 'style' aplicado desde 'body' con 'id'
+    </p>
+    <p class="class_de_pruebas">
+      Esto es un párrafo con 'style' aplicado desde 'head' con 'class'
+    </p>
+    <p id="otro_id_de_pruebas">
+      Este es otro párrafo con 'style' aplicado desde 'head' con 'id'
+    </p>
+
+    <h4>
+      Este parrafo muestra el resultado de aplicar la clase .resaltado en la
+      última
+      <span class="resaltado">palabra.</span>
+    </h4>
+
+    <style>
+      a:active {
+        color: rgb(255, 0, 0);
+      }
+      h2:hover {
+        color: rgb(4, 0, 255);
+      }
+      div:hover {
+        background-color: yellow;
+      }
+    </style>
+    <!-- a las etiquetas 'a,h2,div' en éste ej. se les asigna pseudo-clases (estados) y propiedades al suceder ese "estado"-->
+
+    <style>
+      div p span {
+        color: red;
+      }
+    </style>
+    <!-- aquí se aplica estilo en una jerarquía descendente de clases en cascada (hijos), aunque no es exclusiva... -->
+    <div>
+      --Esto es un div con:
+      <p>
+        ...un parrafo dentro que tiene un...
+        <span>...span...</span>
+      </p>
+    </div>
+
+    <div>
+      --Esto es otro div con:
+      <h5>
+        ...un titulo h5 dentro que tiene...
+        <p>
+          ...un parrafo dentro que tiene un
+          <span>...span...</span>
+        </p>
+      </h5>
+    </div>
+    <!--... eso quiere decir que aunque exista otra clase en medio de la jerarquia descendente se pasa por alto -->
+
+    <style>
+      div > p > span {
+        color: magenta;
+      }
+    </style>
+    <!-- en cambio ésta (>) si es selectiva/exclusiva del orden y cantidad de etiquetas establecidas -->
+
+    <style>
+      div ~ p {
+        text-decoration: underline;
+      }
+    </style>
+    <!-- aquí se aplica estilo a las etiquetas 'p' que estén al mismo nivel (hermanas) de las etiquetas 'div' y por debajo en el editor de texto (no hacia arriba o escritas con antelación)-->
+
+    <div>
+      <p>Parrafo de prueba</p>
+    </div>
+
+    <p>mas texto de prueba</p>
+  </body>
+</html>
