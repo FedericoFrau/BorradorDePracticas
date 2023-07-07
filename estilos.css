@@ -26,3 +26,44 @@ p {
   color: yellow;
   background-color: rgb(255, 174, 0);
 }
+p:hover {
+  color: #cc00a0;
+  background-color: rgb(30, 255, 0);
+}
+p:active {
+  color: #ffcaf4;
+  background-color: rgb(255, 0, 0);
+}
+.caja1 {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  padding: 60px;
+  margin: 60px;
+}
+.caja2 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.caja3 {
+  height: 100px;
+  width: 100px;
+  background-color: #007acc;
+  padding: 100px 100px 100px 100px;
+} /* aquí otra forma de anotar los padding y margin */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} /* asigna la/s fuente de letra */
+#fuente {
+  font-family: "Arial Black";
+} /* si el nombre de la fuente tiene espacio se debe envolver en comillas */
+#fuente2 {
+  font-family: blackopsone;
+}
+#fuente3 {
+  font-family: aldrich;
+}
